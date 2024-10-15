@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug{
+    border: 1px solid red;
+}
+
+body{
+    background-color: #282828;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+.wrapper{
+    height: 100vh;
+    background-color: #282828;
+}
+
+/* Utility */
+.d-flex{
+    display: flex;
+}
+
+.f-column{
+    flex-direction: column;
+}
+
+.upper-content{
+    background-color: var(--color-dark);
+    width: 100%;
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+}
+
+footer{
+    background-color: var(--color-dark);
+    height: 100px;
+}
+
+
+/* Sidebar */
+#sidebar{
+    flex: 0 0 230px;
+    background-color: black;
+
+}
+
+/* main */
+main{
+    flex: 1 1 auto;
+    overflow-y: auto;
+    position: relative;
+    
+
+}
+
+.main-content{
+    position: absolute;
+    top: 0;
+    padding: 90px 20px 20px;
+}
+
+.header{
+    height: 70px;
+    position: sticky;
+    top : 0;
+    left: 0;
+    width: 100%;
+    z-index: 3000;
+    background-color: hsla(0, 0%, 0%, 0.349);
+}
