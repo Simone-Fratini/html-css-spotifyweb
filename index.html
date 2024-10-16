@@ -16,44 +16,56 @@
 
             <div id="sidebar" class="debug">
                     <div class="sidebar-top">
-                        <img class="pleft-20" src="img/logo.svg" alt="logo">
+                        <img class="pleft-20 ptop-20" src="img/logo.svg" alt="logo">
                         <div class="ptop-30 pleft-20">
                             <ul class="nav-list">
                                 <li class="d-flex align-center">
-                                    <span><img class="nav-icon" src="img/home.svg" alt="Home Icon"></span>
-                                    <span>Home</span>
+                                    <span><a href="#"><img class="nav-icon" src="img/home.svg" alt="Home Icon"></a></span>
+                                    <a href="#"><span>Home</span></a>
                                 </li>
                                 <li class="d-flex align-center">
                                     <span><img class="nav-icon" src="img/search.svg" alt="Search Icon"></span>
-                                    <span>Cerca</span>
+                                    <a href="#"><span>Cerca</span></a>
                                 </li>
                                 <li class="d-flex align-center">
                                     <span><img class="nav-icon" src="img/libreria.svg" alt="Library Icon"></span>
-                                    <span>La tua libreria</span>
+                                    <a href="#"><span>La tua libreria</span></a>
                                 </li>
+                            </ul>
                                 
                             </ul>
                         </div>
                         <div class="ptop-20 pleft-20">
                             <h3 class="uppercase pbot-20">playlist</h3>
+                            <div></div>
                             <ul class="d-flex f-column gap-15">
-                                <li><a href="#"><strong>Crea Playlist</strong></a></li>
-                                <li><a href="#"><strong>Nome Playlist</strong></a></li>
-                                <li><a href="#"><strong>Nome Playlist</strong></a></li>
-                                <li><a href="#"><strong>Nome Playlist</strong></a></li>
-                                <li><a href="#"><strong>Nome Playlist</strong></a></li>
-                                <li><a href="#"><strong>Nome Playlist</strong></a></li>
-                                <li><a href="#"><strong>Nome Playlist</strong></a></li>
-                                <li><a href="#"><strong>Nome Playlist</strong></a></li>
+                                <li class="d-flex align-center">
+                                    <span id="crea-playlist">
+                                        <div>+</div>
+                                    </span>
+                                    <a class="pleft-5" href="#"><strong>Crea Playlist</strong></a>
+                                </li>
+                                <li class="text-medium"><a href="#"><strong>Nome Playlist</strong></a></li>
+                                <li class="text-medium"><a href="#"><strong>Nome Playlist</strong></a></li>
+                                <li class="text-medium"><a href="#"><strong>Nome Playlist</strong></a></li>
+                                <li class="text-medium"><a href="#"><strong>Nome Playlist</strong></a></li>
+                                <li class="text-medium"><a href="#"><strong>Nome Playlist</strong></a></li>
+                                <li class="text-medium"><a href="#"><strong>Nome Playlist</strong></a></li>
+                                <li class="text-medium"><a href="#"><strong>Nome Playlist</strong></a></li>
                             </ul>
                         </div>
                     </div>
 
                     <div id="sidebar-bottom" class="debug">
-                        <div class="pleft-20">
-                            <div><strong>Installa app</strong></div>
+                        <div>
+                            <div class="text-medium cl-lightgrey"><strong>Installa app</strong></div>
                             <hr>
-                            <div>John Doe</div>
+                            <div id="profile-picture" class="d-flex align-center debug">
+                                <span class="debug">
+                                    <img src="img/profile.svg" alt="profile">
+                                </span>
+                                <div class="ptop-10 debug"><strong>John Doe</strong></div>
+                            </div>
                         </div>
 
                     </div>
