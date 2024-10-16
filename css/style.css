@@ -18,6 +18,46 @@
     border: 1px solid red;
 }*/
 
+
+/****************************************************************
+* Custom Scrollbar
+****************************************************************/
+.scrollable-element {
+    overflow-y: auto;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: transparent transparent; /* Firefox */
+}
+
+/* WebKit Browsers */
+.scrollable-element::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+
+.scrollable-element::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s;
+}
+
+.scrollable-element:hover::-webkit-scrollbar-thumb {
+    opacity: 1; /* Show on hover */
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.scrollable-element::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Firefox */
+.scrollable-element:hover {
+    scrollbar-color: rgba(255, 255, 255, 0.4) transparent;
+}
+/****************************************************************
+****************************************************************/
+
+
 body{
     background-color: #282828;
     color: white;
