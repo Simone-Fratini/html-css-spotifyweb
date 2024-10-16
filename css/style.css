@@ -48,6 +48,11 @@ ul{
 }
 
 /* sizing  */
+
+.ptop-10{
+    padding-top: 10px;
+}
+
 .ptop-50{
     padding-top: 50px;
 }
