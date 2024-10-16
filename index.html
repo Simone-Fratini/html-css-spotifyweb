@@ -15,29 +15,56 @@
         <div class="upper-content d-flex">
 
             <div id="sidebar" class="debug">
-                    <img src="img/logo.svg" alt="logo">
-                    <div class="ptop-30">
-                        <ul>
-                            <li class="d-flex align-center"><span><img class="nav-icon" src="img/home.svg" alt=""></span>Home</li>
-                            <li class="d-flex align-center"><span><img class="nav-icon" src="img/search.svg" alt=""></span>Cerca</li>
-                            <li class="d-flex align-center"><span><img class="nav-icon" src="img/libreria.svg" alt=""></span>La tua libreria</li>
-                        </ul>
-                    </div>
-                    <div class="ptop-20">
-                        <h3 class="uppercase pbot-20">playlist</h3>
-                        <ul class="d-flex f-column gap-15">
-                            <li><strong>Crea Playlist</strong></li>
-                            <li><strong>Nome Playlist</strong></li>
-                            <li><strong>Nome Playlist</strong></li>
-                            <li><strong>Nome Playlist</strong></li>
-                            <li><strong>Nome Playlist</strong></li>
-                            <li><strong>Nome Playlist</strong></li>
-                            <li><strong>Nome Playlist</strong></li>
-                            <li><strong>Nome Playlist</strong></li>
-                        </ul>
+                    <div class="sidebar-top">
+                        <img src="img/logo.svg" alt="logo">
+                        <div class="ptop-30">
+                            <ul class="nav-list">
+                                <li class="d-flex align-center">
+                                    <span><img class="nav-icon" src="img/home.svg" alt="Home Icon"></span>
+                                    <span>Home</span>
+                                </li>
+                                <li class="d-flex align-center">
+                                    <span><img class="nav-icon" src="img/search.svg" alt="Search Icon"></span>
+                                    <span>Cerca</span>
+                                </li>
+                                <li class="d-flex align-center">
+                                    <span><img class="nav-icon" src="img/libreria.svg" alt="Library Icon"></span>
+                                    <span>La tua libreria</span>
+                                </li>
+                                <li class="d-flex align-center">
+                                    <span><img class="nav-icon" src="img/playlist.svg" alt="Playlist Icon"></span>
+                                    <span>Playlist</span>
+                                </li>
+                                <li class="d-flex align-center">
+                                    <span><img class="nav-icon" src="img/radio.svg" alt="Radio Icon"></span>
+                                    <span>Radio</span>
+                                </li>
+                                <li class="d-flex align-center">
+                                    <span><img class="nav-icon" src="img/artist.svg" alt="Artist Icon"></span>
+                                    <span>Artisti</span>
+                                </li>
+                                <li class="d-flex align-center">
+                                    <span><img class="nav-icon" src="img/album.svg" alt="Album Icon"></span>
+                                    <span>Album</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ptop-20">
+                            <h3 class="uppercase pbot-20">playlist</h3>
+                            <ul class="d-flex f-column gap-15">
+                                <li><a href="#"><strong>Crea Playlist</strong></a></li>
+                                <li><a href="#"><strong>Nome Playlist</strong></a></li>
+                                <li><a href="#"><strong>Nome Playlist</strong></a></li>
+                                <li><a href="#"><strong>Nome Playlist</strong></a></li>
+                                <li><a href="#"><strong>Nome Playlist</strong></a></li>
+                                <li><a href="#"><strong>Nome Playlist</strong></a></li>
+                                <li><a href="#"><strong>Nome Playlist</strong></a></li>
+                                <li><a href="#"><strong>Nome Playlist</strong></a></li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <div id="profile" class="d-flex f-column align-end">
+                    <div id="sidebar-bottom" class="debug">
                         <div>
                             <div><strong>Installa app</strong></div>
                             <hr>
@@ -48,22 +75,35 @@
             </div>
 
             <main class="debug">
-                <div class="header"></div>
+                <div class="header d-flex align-center">
+                    <a href="#">Effettua l'upgrade</a>
+                </div>
                 <div class="main-content">
                     <nav id="upper-nav">
                         <ul class="d-flex gap-15 center uppercase text-medium cl-lightgrey">
-                            <li><strong>in evidenza</strong></li>
-                            <li><strong>podcast</strong></li>
-                            <li><strong>classifiche</strong></li>
-                            <li><strong>generi e mood</strong></li>
-                            <li><strong>nuove uscite</strong></li>
-                            <li><strong>scopri</strong></li>
+                            <li><a href="#"><strong>in evidenza</strong></a></li>
+                            <li><a href="#"><strong>podcast</strong></a></li>
+                            <li><a href="#"><strong>classifiche</strong></a></li>
+                            <li><a href="#"><strong>generi e mood</strong></a></li>
+                            <li><a href="#"><strong>nuove uscite</strong></a></li>
+                            <li><a href="#"><strong>scopri</strong></a></li>
                         </ul>
                     </nav>
                     <section class="ptop-50">
                         <h2>Recently played</h2>
-                        <div class="ptop-50 d-flex gap-15 wrap">
-                            <div class="album">
+                        <div class="ptop-50 d-flex wrap debug">
+                            <div class="album debug col-recent">
+                                <img class="album-image" src="img/metal_lifting.jpg" alt="metal">
+                                <div class="layover">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                                <div class="text-center">
+                                    <h3>Heavy Metal</h3>
+                                    <div>subtitle</div>
+                                </div>
+                            </div>
+
+                            <div class="album col-recent debug">
                                 <img class="album-image" src="img/metal_lifting.jpg" alt="metal">
                                 <div class="text-center">
                                     <h3>Heavy Metal</h3>
@@ -71,7 +111,7 @@
                                 </div>
                             </div>
 
-                            <div class="album">
+                            <div class="album col-recent debug">
                                 <img class="album-image" src="img/metal_lifting.jpg" alt="metal">
                                 <div class="text-center">
                                     <h3>Heavy Metal</h3>
@@ -79,7 +119,7 @@
                                 </div>
                             </div>
 
-                            <div class="album">
+                            <div class="album col-recent debug">
                                 <img class="album-image" src="img/metal_lifting.jpg" alt="metal">
                                 <div class="text-center">
                                     <h3>Heavy Metal</h3>
@@ -87,7 +127,7 @@
                                 </div>
                             </div>
 
-                            <div class="album">
+                            <div class="album col-recent debug">
                                 <img class="album-image" src="img/metal_lifting.jpg" alt="metal">
                                 <div class="text-center">
                                     <h3>Heavy Metal</h3>
@@ -95,15 +135,7 @@
                                 </div>
                             </div>
 
-                            <div class="album">
-                                <img class="album-image" src="img/metal_lifting.jpg" alt="metal">
-                                <div class="text-center">
-                                    <h3>Heavy Metal</h3>
-                                    <div>subtitle</div>
-                                </div>
-                            </div>
-
-                            <div class="album">
+                            <div class="album col-recent debug">
                                 <img class="album-image" src="img/metal_lifting.jpg" alt="metal">
                                 <div class="text-center">
                                     <h3>Heavy Metal</h3>
@@ -115,7 +147,18 @@
                         </div>
                     </section>
                     <section></section>
-                    <section></section>
+                    <section>
+                        <div>
+                            <h2>Artisti più popolari</h2>
+                            <div>più ascolti, più acurati saranno i suggerimenti</div>
+                        </div>
+                        <div class="col-popular">
+                            <img src="img/einaudi.jpeg" alt="#">
+                        </div>
+                        <div class="col-popular">
+                            <img src="img/einaudi.jpeg" alt="#">
+                        </div>
+                    </section>
                 </div>
                 
             </main>
