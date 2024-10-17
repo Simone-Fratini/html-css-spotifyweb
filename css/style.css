@@ -188,9 +188,9 @@ ul{
     transform: translateY(-50%);
 }
 
-.left-border-hover:hover,
+
 .left-border-hover:focus{
-    color: var(--color-light);
+    color: var(--color-highlight);
 }
 
 
