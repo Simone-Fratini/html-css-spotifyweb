@@ -427,10 +427,6 @@ main{
     color: rgb(3, 145, 67);
   }
   
-  
-
-
-
 .center-footer .playbar-buttons ul li {
     transition: transform 0.3s ease-in-out;
 }
@@ -460,6 +456,15 @@ main{
     cursor: pointer;
     margin: 0; 
     padding: 0 10px;
+}
+
+.right-footer ul li {
+    transition: transform 0.3s ease-in-out;
+}
+
+.right-footer ul li:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 
