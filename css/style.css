@@ -157,6 +157,44 @@ ul{
 }
 
 
+.left-border-hover {
+    position: relative;
+    display: inline-block; 
+    transition: color 0.3s ease;
+}
+
+
+.left-border-hover .flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.left-border-hover::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: var(--color-highlight);
+    left: -15px;
+    top: 50%;
+    height: 0;
+    transform: translateX(-50px);
+    transition: height 0.3s ease, top 0.3s ease, transform 0.3s ease;
+}
+
+.left-border-hover:hover::before,
+.left-border-hover:focus::before{
+    height: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-border-hover:hover,
+.left-border-hover:focus{
+    color: var(--color-light);
+}
+
+
+
 
 
 /* Utility */
