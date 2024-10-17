@@ -140,6 +140,10 @@ ul{
     color: var(--color-light);
 }
 
+.bg-black{
+    background-color: #000000;
+}
+
 
 /* Animation */
 .white-animation {
@@ -179,6 +183,10 @@ ul{
     justify-content: space-between;
 }
 
+.z-index-10000{
+    z-index: 10000;
+}
+
 
 .wrap{
     flex-wrap: wrap;
@@ -212,6 +220,14 @@ ul{
 
 .text-medium{
     font-size: 0.75rem;
+}
+
+.text-medium-big{
+    font-size: 0.9rem;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 
