@@ -244,6 +244,7 @@ footer{
 }
 
 
+
 .header a{
     border: 1px solid var(--color-lightgrey);
     color: var(--color-lightgrey);
@@ -253,25 +254,33 @@ footer{
     transition: all 0.3s ease;
 }
 
-#uppernav ul li a::after{
-    content: '';
-    display: block;
-    width: 50px;
-    margin: 0 auto;
-    height: 3px;
-
-}
-
-#uppernav ul li a::hover::after{
-    background-color: var(--color-highlight);
-}
-
-.header a:hover{
-    transform: scale(1.1);
+.header a:hover {
     color: var(--color-light);
-    border: 1px solid var(--color-light);
+    transform: scale(1.1); 
 }
 
+
+.underline-hover {
+    position: relative;
+    display: inline-block; 
+}
+
+.underline-hover::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px; 
+    background-color: var(--color-highlight); 
+    bottom: -3px; 
+    left: 50%;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.underline-hover:hover::after,
+.underline-hover:focus::after {
+    width: 80%; 
+    left: 10%; 
+}
 
 /* Sidebar */
 #sidebar{
