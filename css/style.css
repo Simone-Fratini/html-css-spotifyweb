@@ -623,6 +623,16 @@ main{
     }
 }
 
+@media (max-width: 750px) {
+    .col-recent {
+        width: calc(100% / 2);
+    }
+
+    .text-album{
+        font-size: 18px;
+    }
+}
+
 
 @media (max-width: 576px) {
     .col-recent {
@@ -631,4 +641,15 @@ main{
     .text-album{
         font-size: 16px;
     }
+
+    #sidebar{
+        flex: 0 0 50px;
+        background-color: black;
+    
+    }
+
+    .change-display{
+        display: none;
+    }
+
 }
