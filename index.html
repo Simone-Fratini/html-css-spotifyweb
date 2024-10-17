@@ -86,17 +86,17 @@
 
                 <div id="sidebar-bottom" class="debug">
                     <div class="bg-black z-index-1000">
-                        <div class="text-medium cl-lightgrey pbot-10 d-flex">
+                        <div class="text-medium cl-lightgrey pbot-10 d-flex flex-mobile">
                             <div><i class="fa-regular fa-circle-down"></i></div>
-                            <div class="pleft-10"><strong><a class="white-animation" href="#">Installa app</a></strong>
+                            <div class="pleft-10 change-display"><strong><a class="white-animation" href="#">Installa app</a></strong>
                             </div>
                         </div>
                         <hr>
-                        <div id="profile-picture" class="d-flex align-center debug ptop-10">
+                        <div id="profile-picture" class="d-flex align-center debug ptop-10 flex-mobile">
                             <span class="debug">
                                 <img src="img/profile.svg" alt="profile">
                             </span>
-                            <div class="debug pleft-10"><strong>John Doe</strong></div>
+                            <div class="debug pleft-10 change-display"><strong>John Doe</strong></div>
                         </div>
                     </div>
 
@@ -305,13 +305,13 @@
             <div id="playbar" class="d-flex justify-between align-center">
 
                 <div class="left-footer d-flex align-center debug">
-                    <div class="d-flex align-center">
+                    <div class="d-flex align-center flex-footer-mobile">
                         <img id="playing-song" src="img/sinister.jpeg" alt="">
                         <div class="pleft-10 align-center">
                             <h4>Sinister</h4>
-                            <div class="text-medium cl-lightgrey"><a class="brano-nome" href="#">Brano Nome</a></div>
+                            <div class="text-medium cl-lightgrey"><a class="brano-nome change-display" href="#">Brano Nome</a></div>
                         </div>
-                        <div class="pleft-20">
+                        <div class="pleft-20 reset-padding" id="hearth-folder">
                             <ul class="d-flex gap-10">
                                 <li class="hearth"><i class="fa-regular fa-heart"></i></li>
                                 <li class="folder"><i class="fa-regular fa-folder"></i></li>
@@ -340,13 +340,13 @@
                     </div>
                 </div>
 
-                <div class="right-footer debug d-flex">
+                <div class="right-footer debug d-flex" id="volume-buttons">
                     <ul class="d-flex align-center justify-between debug gap-15">
                         <li><i class="fa-solid fa-list-ul"></i></li>
                         <li><i class="fa-solid fa-display"></i></li>
                         <li class="d-flex">
                             <div><i class="fa-solid fa-volume-high"></i></div>
-                            <div class="play-controller">
+                            <div class="play-controller change-display">
                                 <input type="range" min="0" max="100" value="20" id="playbar">
                             </div>
 

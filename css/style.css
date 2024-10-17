@@ -657,7 +657,7 @@ main{
     }
 
     #sidebar{
-        flex: 0 0 50px;
+        flex: 0 0 70px;
         background-color: black;
     
     }
@@ -670,4 +670,38 @@ main{
         display: block;
     }
 
+    .flex-mobile{
+        display: flex;
+        justify-content: center;
+    }
+
+    .flex-footer-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 50px;
+    }
+
+    #playing-song{
+        width: 20px;
+    }
+
+    #hearth-folder{
+        padding: 0;
+    }
+
+    #volume-buttons{
+        margin-left: 50px;
+    }
+    #volume-buttons>ul{
+        display: flex;
+        gap: 2px;
+        flex-direction: column-reverse;
+    }
+
+    footer{
+        height: 90px;
+    }
+
+    
 }
