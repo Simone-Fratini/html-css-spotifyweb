@@ -14,7 +14,8 @@
     box-sizing: border-box;
 }
 
-/*.debug{
+/*
+.debug{
     border: 1px solid red;
 }
 */
@@ -96,6 +97,10 @@ ul{
     padding-left: 5px;
 }
 
+.pleft-10{
+    padding-left: 10px;
+}
+
 .pright-20{
     padding-right: 20px;
 }
@@ -151,9 +156,17 @@ ul{
     align-items: flex-end;
 }
 
+.justify-between{
+    justify-content: space-between;
+}
+
 
 .wrap{
     flex-wrap: wrap;
+}
+
+.gap-10{
+    gap: 10px;
 }
 
 .gap-15{
@@ -326,17 +339,22 @@ main{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
-    display: none;
     justify-content: center;
     color: white;
     align-items: center;
     font-size: 3em;
     z-index: 1000;
+    opacity: 0;
 }
 
-.layover:hover{
-    background-color: rgba(0, 0, 0, 0.7);
+.box{
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
+
+
 
 .col-popular{
     width: calc((100%) / 2);
@@ -347,4 +365,103 @@ main{
 
     height: auto;
 
+}
+
+/* FOOTER */
+
+#playbar{
+    height: 100%;
+    width: 100%;
+}
+
+.left-footer, .right-footer{
+    width: 230px;
+    height: 100%;
+    padding: 10px;
+}
+
+#playing-song{
+    width: 20%;
+    height: 20%;
+}
+
+.center-footer{
+    width: 40%;
+    height: 100%;
+}
+
+.center-footer .playbar-buttons{
+    height: 50%;
+}
+
+.center-footer .playbar-buttons ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.8em;
+}
+
+.hearth {
+    color: gray;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .hearth:hover {
+    transform: scale(1.2);
+    color: red;
+  }
+
+  .folder {
+    color: gray;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .folder:hover {
+    transform: scale(1.2);
+    color: rgb(3, 145, 67);
+  }
+  
+  
+
+
+
+.center-footer .playbar-buttons ul li:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.playbar-play{
+    height: 30%;
+}
+
+.play-controller{
+    flex-grow: 1;
+}
+
+.play-controller input {
+    width: 100%;
+    -webkit-appearance: none; 
+    background: transparent;
+    cursor: pointer;
+    margin: 0; 
+    padding: 0 10px;
+}
+
+
+.play-controller input::-webkit-slider-runnable-track {
+    height: 7px;
+    background: linear-gradient(#bbb2af, #747373); /* Colori personalizzati */
+    border-radius: 5px;
+}
+
+.play-controller input::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    height: 12px;
+    width: 12px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-top: -3px; /* Centra il thumb sulla traccia */
+    cursor: pointer;
 }
