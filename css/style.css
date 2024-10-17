@@ -70,6 +70,8 @@ body{
     width: 100%;
     height: auto;
     object-fit: cover;
+    display: block;
+    
 }
 
 
@@ -364,22 +366,25 @@ main{
     background-color: hsla(0, 0%, 0%, 0.349);
 }
 
-
-/* Album 
-.album{
-;
-}
-*/
-
 .col-recent{
     width: calc((100%) / 6);
     padding: 5px;
 }
 
 
+.box {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
 
+.box:hover {
+    transform: scale(1.05);
+}
 
-.layover{
+.layover {
     position: absolute;
     top: 0;
     left: 0;
@@ -388,21 +393,25 @@ main{
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
-    color: white;
     align-items: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.layover i{
     font-size: 3em;
-    z-index: 1000;
-    opacity: 0;
+    color: var(--color-light);
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
 }
 
-.box{
-    position: relative;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
+.box:hover .layover i {
+    transform: scale(1);
 }
 
-
+.box:hover .layover {
+    opacity: 1;
+}
 
 .col-popular{
     width: calc((100%) / 2);
@@ -519,7 +528,8 @@ main{
 
 .play-controller input {
     width: 100%;
-    -webkit-appearance: none; 
+    -webkit-appearance: none;
+    appearance: none;
     background: transparent;
     cursor: pointer;
     margin: 0; 
