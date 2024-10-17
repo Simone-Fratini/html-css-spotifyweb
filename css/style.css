@@ -141,6 +141,17 @@ ul{
 }
 
 
+/* Animation */
+.white-animation {
+    transition: color 0.2s ease;
+}
+
+.white-animation:hover {
+    color: var(--color-light);
+}
+
+
+
 
 /* Utility */
 .d-flex{
@@ -426,6 +437,17 @@ main{
     align-items: center;
     gap: 15px;
     font-size: 1.8em;
+}
+
+.brano-nome{
+    color: var(--color-lightgrey);
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.brano-nome:hover {
+    color: var(--color-light);
+    text-decoration: underline;
 }
 
 .hearth {
