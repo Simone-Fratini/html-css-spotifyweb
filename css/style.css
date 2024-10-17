@@ -136,6 +136,10 @@ ul{
     color: var(--color-lightgrey);
 } 
 
+.cl-white{
+    color: var(--color-light);
+}
+
 
 
 /* Utility */
@@ -373,6 +377,13 @@ main{
 
     height: auto;
 
+}
+
+.text-title{
+    font-size: 1.6vw;
+}
+.text-album{
+    font-size: 1vw;
 }
 
 /* FOOTER */
