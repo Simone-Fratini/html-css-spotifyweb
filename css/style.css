@@ -173,6 +173,10 @@ ul{
     gap: 15px;
 }
 
+.gap-30{
+    gap: 30px;
+}
+
 .uppercase{
     text-transform: uppercase;
 }
@@ -427,13 +431,22 @@ main{
 
 
 
-.center-footer .playbar-buttons ul li:hover{
+.center-footer .playbar-buttons ul li {
+    transition: transform 0.3s ease-in-out;
+}
+
+.center-footer .playbar-buttons ul li:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
 
 .playbar-play{
     height: 30%;
+}
+
+.fa-shuffle, .fa-backward-step, .fa-forward-step, .fa-repeat{
+    color: var(--color-lightgrey);
+    font-size: 0.75em;
 }
 
 .play-controller{
@@ -452,7 +465,7 @@ main{
 
 .play-controller input::-webkit-slider-runnable-track {
     height: 7px;
-    background: linear-gradient(#bbb2af, #747373); /* Colori personalizzati */
+    background: linear-gradient(#bbb2af, #747373);
     border-radius: 5px;
 }
 
@@ -462,6 +475,6 @@ main{
     width: 12px;
     background: rgb(255, 255, 255);
     border-radius: 50%;
-    margin-top: -3px; /* Centra il thumb sulla traccia */
+    margin-top: -3px; 
     cursor: pointer;
 }
