@@ -14,6 +14,9 @@
     box-sizing: border-box;
 }
 
+.display-none-pc{
+    display: none;
+}
 /*
 .debug{
     border: 1px solid red;
@@ -323,6 +326,9 @@ footer{
 }
 
 /* Sidebar */
+
+
+
 #sidebar{
     flex: 0 0 230px;
     background-color: black;
@@ -610,6 +616,10 @@ main{
         font-size: 20px;
     }
 
+    .display-none-pc{
+        display: none;
+    }
+
 }
 
 
@@ -621,6 +631,8 @@ main{
     .text-album{
         font-size: 18px;
     }
+
+    
 }
 
 @media (max-width: 750px) {
@@ -631,6 +643,8 @@ main{
     .text-album{
         font-size: 18px;
     }
+
+    
 }
 
 
@@ -650,6 +664,10 @@ main{
 
     .change-display{
         display: none;
+    }
+
+    .display-none-pc{
+        display: block;
     }
 
 }
