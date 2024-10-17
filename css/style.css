@@ -378,10 +378,12 @@ main{
     height: auto;
 
 }
-
+/*
 .text-title{
     font-size: 1.6vw;
 }
+*/
+
 .text-album{
     font-size: 1vw;
 }
@@ -497,4 +499,25 @@ main{
     border-radius: 50%;
     margin-top: -3px; 
     cursor: pointer;
+}
+
+
+@media (max-width: 1200px) {
+    .col-recent {
+        width: calc(100% / 4);
+    }
+}
+
+
+@media (max-width: 996px) {
+    .col-recent {
+        width: calc(100% / 3);
+    }
+}
+
+
+@media (max-width: 576px) {
+    .col-recent {
+        width: 100%;
+    }
 }
