@@ -29,10 +29,11 @@ body{
     color: white;
 }
 
-
+/*
 .debug{
     border: 1px solid red;
 }
+    */
 
 a{
     text-decoration: none;
@@ -63,9 +64,11 @@ header{
 }
 
 nav{
-    width: 50%;
+    width: 60%;
     min-width: 20%;
 }
+
+
 
 .menu{
     flex: 1 1 100%;
@@ -160,6 +163,14 @@ main>div{
     text-decoration: underline;
 }
 
+#button-premium>a>#duo-button{
+    background-color: var(--color-yellow);
+}
+
+#button-premium>a>#student-button{
+    background-color: var(--color-darkpink);
+}
+
 /************FLEX**************/
 
 .d-flex{
@@ -219,6 +230,10 @@ main>div{
     padding-top: 50px;
 }
 
+.ptop-80{
+    padding-top: 80px;
+}
+
 .pright-20{
     padding-right: 20px;
 }
@@ -253,3 +268,39 @@ main>div{
 .bg-dark-pink{
     background-color: var(--color-darkpink);
 }
+
+.cl-yellow{
+    color: var(--color-yellow);
+}
+
+.bg-yellow{
+    background-color: var(--color-yellow);
+}
+
+/************Animation************/
+#button-premium > a > #student-button {
+    transition: transform 0.3s ease; 
+}
+
+#button-premium > a > #student-button:hover {
+    transform: scale(1.05);
+}
+
+#button-premium > a > #duo-button {
+    transition: transform 0.3s ease; 
+}
+
+#button-premium > a > #duo-button:hover {
+    transform: scale(1.05);
+}
+
+#button-premium > a > #individual-button {
+    transition: transform 0.3s ease; 
+}
+
+#button-premium > a > #individual-button:hover {
+    transform: scale(1.05);
+}
+
+
+
