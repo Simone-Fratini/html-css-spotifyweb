@@ -303,12 +303,10 @@ main>div{
 }
 
 .scale-animation {
-    transition: transform 0.3s ease; /* Transizione fluida */
+    transition: transform 0.3s ease; 
 }
 
 .scale-animation:hover {
-    transform: scale(1.1); /* Aumenta la scala a 1.1 al passaggio del mouse */
+    transform: scale(1.1);
 }
-
-
 
